@@ -1616,6 +1616,7 @@
       var xhr = io.util.request();
 
       xhr.open('GET', url, true);
+      xhr.withCredentials = true;
       xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
           xhr.onreadystatechange = empty;
